@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l [[:A-Za-z:]]* /etc/ssh/sshd_config
+ls -l ^[[:A-Za-z:]] /etc/ssh/sshd_config
