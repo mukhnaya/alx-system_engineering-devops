@@ -4,5 +4,5 @@ mos=0
 while((mos<10))
 do
 	echo "Best School"
-let mos++
+	((mos++))
 done
