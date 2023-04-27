@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#usage of if in loop
+mos=0
+while((mos<10))
+do
+	echo "Best School"
+	if [ $mos -eq 8 ]
+	then
+		echo "Hi"
+	fi
+	((mos++))
+done
