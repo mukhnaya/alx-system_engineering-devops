@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#fizz buzz game
+mos=1
+while((mos<101))
+do
+	pau=$((mos%5))
+	jul=$((mos%3))
+	if [ $pau -eq 0 ] && [ $jul -eq 0 ]
+	then
+		echo "FizzBuzz"
+	elif [ $pau -eq 0 ]
+	then
+		echo "Buzz"
+	elif [ $jul -eq 0 ]
+	then
+		echo "Fizz"
+	else
+		echo $mos
+	fi
+	((mos++))
+done
