@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # use several if
 mos=0
-while((mos<9))
+while((mos<10))
 do
 	if [ $mos -eq 3 ]
 	then
