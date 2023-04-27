@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+#checks info about files
+file_Name=school
+if [ -e "${file_Name}" ]
+then
+	echo "$file_Name file exists"
+	if [ -z "$(cat ${file_Name})" ]
+	then
+		echo "$file_Name file is empty"
+		if [ -f "${file_Name}" ]
+		then
+			echo "$file_Name is a regular file"
+		else
+			:
+		fi
+	else
+		echo "$file_Name file is not empty"
+		if [ -f "${file_Name}" ]
+		then
+			echo "$file_Name is a regular file"
+		else
+			:
+		fi
+	fi
+else
+	echo "$file_Name file does not exist"
+fi
