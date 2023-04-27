@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# use several if
+mos=0
+while((mos<9))
+do
+	if [ $mos -eq 3 ]
+	then
+		echo "bad luck"
+	elif [ $mos -eq 7 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((mos++))
+done
