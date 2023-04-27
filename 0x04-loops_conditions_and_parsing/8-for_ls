@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #print contents of current working directory
-dir_contents=`ls ./*`
+dir_contents=$(ls ./*)
 for mos in $dir_contents
 do
 	pau=$( echo "$mos" | cut -d "-" -f2 )
-	echo $pau
+	echo "$pau"
 done
