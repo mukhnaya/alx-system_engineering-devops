@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# print a string 10 times
+
+for((mos=0; mos<10; mos++))
+do
+	echo "Best School"
+done
