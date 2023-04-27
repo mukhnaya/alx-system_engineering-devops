@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#print using until
+mos=0
+until [ $mos -gt 9 ]
+do
+	echo "Best School"
+	((mos++))
+done
