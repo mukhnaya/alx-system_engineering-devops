@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#print using while loop
+mos=0
+while((mos<10))
+do
+	echo "Best School"
+let mos++
+done
