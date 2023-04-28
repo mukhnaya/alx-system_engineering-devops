@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# print indefinetly
+mos=1
+while((mos<2))
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
