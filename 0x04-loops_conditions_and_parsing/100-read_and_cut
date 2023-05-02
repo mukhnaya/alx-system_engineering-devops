@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # display content of etc/password
 mos=$(cat /etc/passwd)
+echo "$mos"
