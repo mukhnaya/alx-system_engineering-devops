@@ -1,0 +1,12 @@
+#!/usr/bash/env bash
+#creates a file
+remove_file="rm /var/run/myscript.pid; exit $?"
+echo $$ > "/var/run/myscript.pid"
+trap 'echo "I hate the kill command"; '"$remove_file" SIGTERM
+trap 'echo "Y U no love me?!"' SIGINT
+trap ''"$remove_file" SIGQUIT
+mos=1
+while mos<1
+do
+	printf "To infinity and beyond"
+done
