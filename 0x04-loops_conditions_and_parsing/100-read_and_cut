@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 # display content of etc/password
-mos=$(cat /etc/passwd)
-echo "$mos"
+cat /etc/passwd >> mos.txt
+mos=$(tail -1 mos.txt)
+
+while read -r line
+do
+	echo "$line"
+done < "$mos.txt"
