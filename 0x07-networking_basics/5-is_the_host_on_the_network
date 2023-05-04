@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#ping an IP
+read ip_address
