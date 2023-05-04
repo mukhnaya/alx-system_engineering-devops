@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displays listening ports
+echo "Active Internet connections (only servers)"
+sudo lsof -i -P -n | grep LISTEN
