@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 #ping an IP
 read -r ip_address
-mos=$(ping "$ip_address")
 if [ -z "$ip_address" ]
 then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
@@ -9,7 +8,7 @@ else
 	x=0
 	while((x<5))
 	do
-		echo "$mos"
+		echo "ping $ip_address"
 		((x++))
 	done
 fi
