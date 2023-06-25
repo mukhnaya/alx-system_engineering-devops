@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# configure machine to connect without password
+Host school
+    HostName 100.26.217.74
+    User ubuntu
+    Port 22
+    IdentityFile ~/.ssh/school
